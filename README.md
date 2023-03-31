@@ -9,8 +9,6 @@ I'd seen several Trader mod's that do the same basically, and also had seen post
 
 Every Mod I ran across used the format using [@id='1'], [@id='2'], [@id='6'], [@id='7'], [@id='8']
 
-<config>
-<!-- Joel -->
 	<set xpath="/traders/trader_info[@id='1']/@reset_interval">1</set>
 	<set xpath="/traders/trader_info[@id='1']/@min_inventory">40</set>
 	<set xpath="/traders/trader_info[@id='1']/@max_inventory">100</set>
@@ -21,8 +19,6 @@ Every Mod I ran across used the format using [@id='1'], [@id='2'], [@id='6'], [@
 
 So to make things smaller and simpler I rewrote it as the following removing the need to have 4 other sections of the same size for @1d's 2,6,7,8
 
-<config>
-<!-- Traders -->
 	<set xpath="/traders/trader_info[@id &lt; 3 or @id &gt; 5]/@reset_interval">1</set>
 	<set xpath="/traders/trader_info[@id &lt; 3 or @id &gt; 5]/@min_inventory">50</set>
 	<set xpath="/traders/trader_info[@id &lt; 3 or @id &gt; 5]/@max_inventory">100</set>
@@ -33,13 +29,11 @@ So to make things smaller and simpler I rewrote it as the following removing the
   
   The other changes made were to the following:
 
-<!-- Player Owned - Vending Machine -->
 	<set xpath="/traders/trader_info[@id='3']/@reset_interval">1</set>
 	<set xpath="/traders/trader_info[@id='3']/@allow_sell">true</set>
   
   <-- And -->
   
-  <!-- Rented - Vending Machine -->
 	<set xpath="/traders/trader_info[@id='5']/@reset_interval">1</set>
 	<set xpath="/traders/trader_info[@id='5']/@allow_sell">true</set>
   
