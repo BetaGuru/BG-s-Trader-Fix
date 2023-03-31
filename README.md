@@ -1,8 +1,4 @@
 # BG-s-Trader-Fix
-Keeps Traders Open all the time
-
-
-# BG-s-Trader-Fix
 Sets Traders to open 24/7 and removes the open/closed sounds
 
 I'd seen several Trader mod's that do the same basically, and also had seen posts on reddit as well as the 7daystodie.com forum and seeing all were using the following format for every single Trader instead of fully using the features of xpath examples below
